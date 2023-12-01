@@ -1,18 +1,14 @@
-#section1 {
-    height: 725px;
-}
 
-#section2 {
-    height: 725px;
-}
 
-body {
-    background-size: 10%, auto;
-    background-image: url("background(2).png");
-    margin: 0;
-    overflow-y: auto;
-    padding-bottom: 200px;
-}
+
+
+
+
+
+
+
+
+
 
 table, th, td {
     border: 0px solid black;

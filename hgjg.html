@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nxt museum</title>
+    <style>
+        #section1 {
+            height: 725px;
+        }
+
+        #section2 {
+            height: 725px;
+        }
+
+        body {
+            background-size: 10%, auto;
+            background-image: url("background(2).png");
+            margin: 0;
+            overflow-y: auto;
+            padding-bottom: 200px;
+        }
+
+        table, th, td {
+            border: 0px solid black;
+            border-collapse: collapse;
+        }
+
+        table.center {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button {
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: black; 
+            color: white; 
+            border: 4px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: black; 
+            color: white; 
+            border: 4px solid #FFCE36;
+        }
+
+        .button2:hover {
+            background-color: #FFCE36;
+            color: white;
+        }
+    </style>
+</head>
+<div class="main" id="section1">
+    <img src="nxtnobg.png" alt="logo" width="300" height="150">
+</div>
+
+    <div class="main" id="section2">
+    </div>
+
+    <div class="button-container">
+        <button class="button button1" onclick="scrollToSection('section1')">boven</button>
+        <button class="button button1" onclick="scrollToSection('section2')">tickets</button>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
