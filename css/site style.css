@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nxt museum</title>
-    <style>
+    
+        
         #section1 {
-            height: 725px;
+            height:725px;
+            width: 100%;
+
+
+
+
+
+
+
+
+
+
+
         }
 
         #section2 {
@@ -15,12 +22,15 @@
 
         body {
             background-size: 10%, auto;
-            background-image: url("background(2).png");
             margin: 0;
             overflow-y: auto;
             padding-bottom: 200px;
         }
 
+        img {
+            width: 10%;
+        }
+        
         table, th, td {
             border: 0px solid black;
             border-collapse: collapse;
@@ -77,25 +87,43 @@
             background-color: #FFCE36;
             color: white;
         }
-    </style>
-</head>
-<div class="main" id="section1">
-    <img src="nxtnobg.png" alt="logo" width="300" height="150">
-</div>
-
-    <div class="main" id="section2">
-    </div>
-
-    <div class="button-container">
-        <button class="button button1" onclick="scrollToSection('section1')">boven</button>
-        <button class="button button1" onclick="scrollToSection('section2')">tickets</button>
-    </div>
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
+        
+.dropbtn {
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
         }
-    </script>
-</body>
-</html>
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+            background-color: black; 
+            color: white; 
+            border: 4px solid #4CAF50;
+}
+
+.dropdown-content a:hover{
+            background-color: #4CAF50;
+            color: white;
+            }
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
