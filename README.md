@@ -9,3 +9,6 @@ AFSPRAKEN
 3. als iets niet lukt zeg je het en vraag je hulp aan je partner of andere klasgenoten / docenten
 
 4. we leveren de opdracht optijd in
+
+
+onze website    https://josal.nl/index2.html
