@@ -101,8 +101,10 @@
         }
 
 .dropdown {
-  position: relative;
+  position: ;
   display: inline-block;
+  margin-left: 500px;
+
 }
 
 .dropdown-content {
