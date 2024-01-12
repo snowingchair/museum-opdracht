@@ -25,6 +25,7 @@
             margin: 0;
             overflow-y: auto;
             padding-bottom: 200px;
+            background-color: skyblue;
         }
 
         img {
@@ -103,8 +104,8 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 500px;
-  
+  margin-left: 35%;
+  border-bottom: 3px solid black;
 }
 
 .dropdown-content {
