@@ -3,30 +3,20 @@
         #section1 {
             height:725px;
             width: 100%;
-
-
-
-
-
-
-
-
-
-
-
         }
 
         #section2 {
-            height: 725px;
+            height: 100%;
         }
 
         body {
-            background-size: 10%, auto;
+            background-size: 100%, auto;
             margin: 0;
             overflow-y: auto;
             padding-bottom: 200px;
-            background-color: skyblue;
+            background-color: gray;
         }
+
 
         img {
             width: 10%;
@@ -130,3 +120,8 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+footer {
+    size: 60px;
+    color: black;
+}
