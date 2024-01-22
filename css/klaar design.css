@@ -55,3 +55,7 @@ footer{
     display: flex;
     align-items: center;
 }
+
+#intro_text{
+    font-size: 20px;
+}
