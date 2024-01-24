@@ -11,9 +11,8 @@ body{
 }
 
 header, footer{
-    
-    
     height:60px;
+    color: gray;
 }
 
 
@@ -50,7 +49,7 @@ img{
 }
 
 img:hover{
-    transform: scale(1.05);
+    transform: scale(1.20);
 }
 
 p:last-of-type{
@@ -66,7 +65,7 @@ footer{
     height: 160px;
     display: flex;
     align-items: center;
-    color: black;
+    background: gray;
 }
 
 #intro_text{
@@ -79,6 +78,31 @@ footer{
 }
 
 #Adres{
+    border-top: 5px white;
     margin-left: 200px;
     color: white;
 }
+
+header{
+    margin-top: 0;
+}
+
+.reviews{
+    margin: 10px;
+    align-items: end;
+}
+
+#review1{
+    margin-left: 500px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+#review2{
+    margin-bottom: 50px;
+}
+
+#review3{
+    margin-left: 500px;
+}
+
