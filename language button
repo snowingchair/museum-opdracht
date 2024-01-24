@@ -1,0 +1,15 @@
+    <div class="container">
+        <span class="NE">Nederlands</span>
+        <input type="checkbox" class="check">
+        <span class="EN">Engels</span>
+        
+        <div class="text textEN">
+            <h2>Engels</h2>
+            <p></p>
+        </div>
+        
+        <div class="text textNE">
+            <h2>Nederlands</h2>
+            <p></p>
+        </div>
+    </div>
