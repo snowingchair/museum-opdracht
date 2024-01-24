@@ -65,16 +65,17 @@ footer{
     height: 160px;
     display: flex;
     align-items: center;
-    background: gray;
+    background: #222222;
 }
 
 #intro_text{
     font-size: 20px;
 }
 
-#NXT_header{
+#header_logo{
     color: white;
     width: 7%;
+    margin-left: 10px;
 }
 
 #Adres{
@@ -105,4 +106,3 @@ header{
 #review3{
     margin-left: 500px;
 }
-
