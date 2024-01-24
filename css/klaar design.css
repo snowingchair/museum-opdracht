@@ -15,7 +15,6 @@ header, footer{
     color: gray;
 }
 
-
 h1{
     font-size: 250%;
     margin-bottom:20px;
@@ -27,6 +26,11 @@ article{
     margin: 0 auto;
     padding: 40px;
     color: white;
+}
+
+#intro_text{
+    margin-top: 7px;
+    margin-bottom: 100px;
 }
 
 figure{
@@ -89,7 +93,7 @@ header{
 }
 
 .reviews{
-    margin: 10px;
+    margin-bottom: 50px;
     align-items: end;
 }
 
