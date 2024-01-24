@@ -11,8 +11,8 @@ body{
 }
 
 header, footer{
-    background: white;
-    color: white;
+    
+    
     height:60px;
 }
 
@@ -32,6 +32,15 @@ article{
 
 figure{
     margin-bottom: 40px;
+}
+
+.Geschiedenis_NXT{
+    margin-bottom: 10px;
+}
+
+h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
 }
 
 img{
@@ -57,6 +66,7 @@ footer{
     height: 160px;
     display: flex;
     align-items: center;
+    color: black;
 }
 
 #intro_text{
@@ -66,4 +76,9 @@ footer{
 #NXT_header{
     color: white;
     width: 7%;
+}
+
+#Adres{
+    margin-left: 200px;
+    color: white;
 }
