@@ -66,9 +66,9 @@ figcaption{
 }
 
 footer{
-    height: 160px;
+    height: 200px;
     display: flex;
-    align-items: center;
+
     background: #222222;
 }
 
@@ -80,12 +80,6 @@ footer{
     color: white;
     width: 7%;
     margin-left: 10px;
-}
-
-#Adres{
-    border-top: 5px white;
-    margin-left: 200px;
-    color: white;
 }
 
 header{
@@ -109,4 +103,17 @@ header{
 
 #review3{
     margin-left: 500px;
+}
+
+#Adres{
+    border-top: 5px white;
+    margin-left: 150px;
+    color: white;
+    margin-top: 90px;
+}
+
+#SocialMedia{
+    margin-left: 350px;
+    margin-top: 90px;
+    color: white;
 }
