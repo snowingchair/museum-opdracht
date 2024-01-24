@@ -119,10 +119,12 @@ header{
 #InstaLogo{
     width: 5%;
     margin-right: 5px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 #YoutubeLogo{
-    width: 4%;
+    width: 4.5%;
     margin-top:15px;
+    margin-right: 5px;
+    padding-bottom: 5px;
 }
