@@ -68,7 +68,7 @@ figcaption{
 footer{
     height: 200px;
     display: flex;
-
+    align-items: center;
     background: #222222;
 }
 
@@ -109,11 +109,20 @@ header{
     border-top: 5px white;
     margin-left: 150px;
     color: white;
-    margin-top: 90px;
 }
 
 #SocialMedia{
     margin-left: 350px;
-    margin-top: 90px;
     color: white;
+}
+
+#InstaLogo{
+    width: 5%;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+#YoutubeLogo{
+    width: 4%;
+    margin-top:15px;
 }
