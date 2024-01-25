@@ -1,146 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nxt museum</title>
-        <link rel=icon href="pepie.ico">
-</head>
-<div class="main" id="section1">
-    
-    <div class="button button3">
-  <button class="button button3">Dropdown</button>
-  <div class="dropdown-content">
-    <a button class="button2">tickets</a>
-    <a button class="button2">history</a>
-    <a button class="button2">contacts</a>
-  </div>
-</div>
-    
-    <img src="nxtnobg.png" alt="logo" width="300" height="150">
-</div>
-
-    <div class="main" id="section2">
-    </div>
-
-    <div class="button-container">
-        <button class="button button1" onclick="scrollToSection('section1')">boven</button>
-        <button class="button button1" onclick="scrollToSection('section2')">tickets</button>
-    </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/klaardesign.css">
+    <link rel=icon href="img/nxtnobg_1.png">
+        
     <style>
-        #section1 {
-            height: 725px;
-        }
-
-        #section2 {
-            height: 725px;
-        }
-
-        body {
-            background-size: 10%, auto;
-            background-image: url("background(2).png");
+        * {
+            padding:0;
             margin: 0;
-            overflow-y: auto;
-            padding-bottom: 200px;
+            box-sizing: border-box;
         }
 
-        table, th, td {
-            border: 0px solid black;
-            border-collapse: collapse;
+        body{
+            background-color: black;
+            font-size: 20px;
+            font-family: sans-serif;
         }
 
-        table.center {
-            margin-left: auto; 
-            margin-right: auto;
+        header, footer{
+            height:60px;
+            color: gray;
         }
 
-        .main {
-            position: relative;
+        h1{
+            font-size: 250%;
+            margin-bottom:20px;
+            border-bottom: 1px solid white;
         }
 
-        .button-container {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
+        article{
+            width:60vw;
+            margin: 0 auto;
+            padding: 40px;
+            color: white;
+        }
+
+        #intro_text{
+            margin-top: 7px;
+            margin-bottom: 100px;
+        }
+
+        figure{
+            margin-bottom: 40px;
+        }
+
+        .Geschiedenis_NXT{
+            margin-bottom: 10px;
+        }
+
+        h3{
+            border-bottom: 1px solid white;
+            margin-bottom: 10px;
+        }
+
+        img{
+            width: 50%;
+            border-radius: 5px;
+            transition: 0.3s transform;
+        }
+
+        img:hover{
+            transform: scale(1.20);
+        }
+
+        p:last-of-type{
+            margin-bottom: 0px;
+        }
+
+        figcaption{
+            font-size: 80%;
+            font-style: italic;
+        }
+
+        footer{
+            height: 200px;
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+
+            background: #222222;
         }
 
-        .button {
-            border: none;
-            color: black;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            transition-duration: 0.4s;
-            cursor: pointer;
+        #intro_text{
+            font-size: 20px;
         }
 
-        .button1 {
-            background-color: black; 
-            color: white; 
-            border: 4px solid #4CAF50;
+        #header_logo{
+            color: white;
+            width: 7%;
+            margin-left: 10px;
         }
 
-        .button1:hover {
-            background-color: #4CAF50;
+        header{
+            position: sticky;
+            top: 0;
+            margin-top: 0;
+        }
+
+        .reviews{
+            margin-bottom: 50px;
+            align-items: end;
+        }
+
+        #review1{
+            margin-left: 500px;
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+
+        #review2{
+            margin-bottom: 50px;
+        }
+
+        #review3{
+            margin-left: 500px;
+        }
+
+        #Adres{
+            border-top: 5px white;
+            margin-left: 150px;
+            color: white;
+            margin-top: 90px;
+        }
+
+        #SocialMedia{
+            margin-left: 350px;
+            margin-top: 90px;
             color: white;
         }
-
-        .button2 {
-            background-color: black; 
-            color: white; 
-            border: 4px solid #FFCE36;
+                    
+        .footer-basic {
+            padding:40px 0;
+            background-color:#ffffff;
+            color:#4b4c4d;
         }
 
-        .button2:hover {
-            background-color: #FFCE36;
+        .footer-basic ul {
+            padding:0;
+            list-style:none;
+            text-align:center;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:0;
+        }
+
+        .footer-basic li {
+            padding:0 10px;
+        }
+
+        .footer-basic ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity:1;
+        }
+
+        .footer-basic .social {
+            text-align:center;
+            padding-bottom:25px;
+        }
+
+        .footer-basic .social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin:0 8px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        .footer-basic .social > a:hover {
+            opacity:0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top:15px;
+            text-align:center;
+            font-size:13px;
+            color:#aaa;
+            margin-bottom:0;
+        }
+
+        .footer-basic {
+            padding:40px 0;
+            background-color:#ffffff;
+            color:#4b4c4d;
+        }
+
+        .footer-basic ul {
+            padding:0;
+            list-style:none;
+            text-align:center;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:0;
+        }
+
+        .footer-basic li {
+            padding:0 10px;
+        }
+
+        .footer-basic ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity:1;
+        }
+
+        .footer-basic .social {
+            text-align:center;
+            padding-bottom:25px;
+        }
+
+        .footer-basic .social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin:0 8px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        .footer-basic .social > a:hover {
+            opacity:0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top:15px;
+            text-align:center;
+            font-size:13px;
+            color:#aaa;
+            margin-bottom:0;
+        }
+
+        .list-inline {
             color: white;
+            padding: 1rem 2rem;
+            font-family: "Segoe UI";
+            font-weight: 100;
+
+            & a {
+                text-decoration: inherit;
+                color: inherit;
+            }
         }
 
-        
-                .button3 {
-            background-color: black; 
-            color: white; 
-            border: 4px solid #4CAF50;
-        }
+        #language-selector {
+            gap: 1px;
+            display: inline-flex;
+            font-family: "Segoe UI";
+            font-weight: 100;
+            padding: 10px;
+            
+            & > a {
+                text-decoration: none;
+                padding: 0.5rem;
+                background-color: black;
+                color: white;
+                transition: opacity 0.3s;
 
-        .button3:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .button3 {
-            position: relative;
-        }
+                &.selected {
+                    font-weight: bold;
+                }
 
-        .dropdown3 {
-            display: none;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            top: 100%;
-            left: 0;
-        }
+                &:hover {
+                    opacity: 0.8;
+                }
 
-        .button3:hover .dropdown3 
-        {
-            display: block;
+                &:first-of-type {
+                    border-right: 1px solid white;
+                }
+            }
         }
-        
-        
     </style>
+</head>
+<body>
+    <header>
+        <div id="language-selector">
+            <a href="/">NL</a>
+            <a href="/en.html">EN</a>
+        </div>
 
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+        <script>
+            const selector = document.getElementById("language-selector");
+
+            for (const child of selector.children) {
+                if (child.href.endsWith(window.location.pathname)) {
+                    child.classList = "selected";
+                }
+            }
+        </script>
+    </header>
+    <article>
+        <h1>NXT museum</h1>
+        <figure>
+            <img src="img/Schermafbeelding2024-01-19094221.png" alt="buiten kant van het NXT gebouw">
+            <figcaption></figcaption>
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quis, necessitatibus reprehenderit nobis ducimus ad adipisci recusandae,
+            facere,
+            explicabo iusto pariatur tempore!
+            Dolorem eum laboriosam est? Vero vitae nulla est repellat.
+        </p>
+        <p>
+            we moesten een audio bestand hier plaatsen.
+            <audio src="audio/winning-elevation-111355.mp3" controls></audio>
+            <a href="https://pixabay.com/music/main-title-winning-elevation-111355/">Bron</a>
+        </p>
+        <p>
+            HTML wordt meestal bekeken met een webbrowser, 
+            een programma dat HTML-documenten opvraagt bij een webserver en als opgemaakte tekst (een webpagina) aan de gebruiker toont. 
+            Het document kan ook 'lokaal' staan: als bestand op de eigen computer van de gebruiker, 
+            in plaats van op een webserver. 
+            Naast browsers kunnen ook sommige andere programma's zoals tekstverwerkingsprogramma's HTML-documenten tonen. 
+            E-mails kunnen eveneens HTML-codes bevatten.
+        </p>
+        <figure>
+            <img src="afbeeldingen/download.jpeg" alt="een paar lijnen HTML code">
+            <figcaption>
+                🌱dit zijn de 10 basis regels waar elke html bestand mee begint.
+                <a href="https://kinsta.com/nl/blog/html-leren/">Bron</a>
+            </figcaption>
+        </figure>
+        <p>
+            De wezenlijke eigenschap van HTML is dat deze hypertekst ondersteunt: documenten en bestanden die verbonden zijn door direct volgbare verwijzingen, 
+            de zogenaamde hyperlinks (in het Nederlands ook wel koppelingen genoemd).
+        </p>
+        <video src="video/1817572108.mp4" controls></video>
+        <p>
+            Dit artikel hebben christian en samuel geschreven voor een opdracht van bo waar we de 
+            de informatie heb ik gehaald van <a href="https://nxtmuseum.com/nl/?gad_source=1&gclid=EAIaIQobChMIwqOzy7TSggMVeIZoCR0zzgkVEAAYASAAEgIdfPD_BwE">nxt museum</a>
+            moeten namaken
+        </p>
+    </article>
+    <footer>
+        <div class="footer-basic">
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            
+            <p class="copyright">Samuel en Christian © 2024</p>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
