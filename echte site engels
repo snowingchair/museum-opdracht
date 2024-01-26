@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nxt museum</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/klaardesign.css">
+    <link rel=icon href="img/nxtnobg_1.png">
+        
+    <style>
+        * {
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        header, footer{
+            height:60px;
+            color: gray;
+        }
+
+        h1{
+            font-size: 250%;
+            margin-bottom:20px;
+            border-bottom: 1px solid white;
+        }
+
+        article{
+            width:60vw;
+            margin: 0 auto;
+            padding: 40px;
+            color: white;
+        }
+
+        #intro_text{
+            margin-top: 7px;
+            margin-bottom: 100px;
+        }
+
+        figure{
+            margin-bottom: 40px;
+        }
+
+        .Geschiedenis_NXT{
+            margin-bottom: 10px;
+        }
+
+        h3{
+            border-bottom: 1px solid white;
+            margin-bottom: 10px;
+        }
+
+        img{
+            width: 50%;
+            border-radius: 5px;
+            transition: 0.3s transform;
+        }
+
+        img:hover{
+            transform: scale(1.20);
+        }
+
+        p:last-of-type{
+            margin-bottom: 0px;
+        }
+
+        figcaption{
+            font-size: 80%;
+            font-style: italic;
+        }
+
+        footer{
+            height: 200px;
+            display: flex;
+
+            background: #222222;
+        }
+
+        #intro_text{
+            font-size: 20px;
+        }
+
+        #header_logo{
+            color: white;
+            width: 7%;
+            margin-left: 10px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            margin-top: 0;
+        }
+
+        .reviews{
+            margin-bottom: 50px;
+            align-items: end;
+        }
+
+        #review1{
+            margin-left: 500px;
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+
+        #review2{
+            margin-bottom: 50px;
+        }
+
+        #review3{
+            margin-left: 500px;
+        }
+
+        #Adres{
+            border-top: 5px white;
+            margin-left: 150px;
+            color: white;
+            margin-top: 90px;
+        }
+
+        #SocialMedia{
+            margin-left: 350px;
+            margin-top: 90px;
+            color: white;
+        }
+                    
+        .footer-basic {
+            padding:40px 0;
+            background-color:#ffffff;
+            color:#4b4c4d;
+        }
+
+        .footer-basic ul {
+            padding:0;
+            list-style:none;
+            text-align:center;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:0;
+        }
+
+        .footer-basic li {
+            padding:0 10px;
+        }
+
+        .footer-basic ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity:1;
+        }
+
+        .footer-basic .social {
+            text-align:center;
+            padding-bottom:25px;
+        }
+
+        .footer-basic .social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin:0 8px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        .footer-basic .social > a:hover {
+            opacity:0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top:15px;
+            text-align:center;
+            font-size:13px;
+            color:#aaa;
+            margin-bottom:0;
+        }
+
+        .footer-basic {
+            padding:40px 0;
+            background-color:#ffffff;
+            color:#4b4c4d;
+        }
+
+        .footer-basic ul {
+            padding:0;
+            list-style:none;
+            text-align:center;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:0;
+        }
+
+        .footer-basic li {
+            padding:0 10px;
+        }
+
+        .footer-basic ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity:1;
+        }
+
+        .footer-basic .social {
+            text-align:center;
+            padding-bottom:25px;
+        }
+
+        .footer-basic .social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin:0 8px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        .footer-basic .social > a:hover {
+            opacity:0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top:15px;
+            text-align:center;
+            font-size:13px;
+            color:#aaa;
+            margin-bottom:0;
+        }
+
+        .list-inline {
+            color: white;
+            padding: 1rem 2rem;
+            font-family: "Segoe UI";
+            font-weight: 100;
+
+            & a {
+                text-decoration: inherit;
+                color: inherit;
+            }
+        }
+
+        #language-selector {
+            gap: 1px;
+            display: inline-flex;
+            font-family: "Segoe UI";
+            font-weight: 100;
+            padding: 10px;
+            
+            & > a {
+                text-decoration: none;
+                padding: 0.5rem;
+                background-color: black;
+                color: white;
+                transition: opacity 0.3s;
+
+                &.selected {
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:first-of-type {
+                    border-right: 1px solid white;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="language-selector">
+            <a href="/">NL</a>
+            <a href="/en.html">EN</a>
+        </div>
+
+        <script>
+            const selector = document.getElementById("language-selector");
+
+            for (const child of selector.children) {
+                if (child.href.endsWith(window.location.pathname)) {
+                    child.classList = "selected";
+                }
+            }
+        </script>
+    </header>
+    <article>
+        <h1>NXT museum</h1>
+        <figure>
+            <img src="img/Schermafbeelding2024-01-19094221.png" alt="buiten kant van het NXT gebouw">
+            <figcaption></figcaption>
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quis, necessitatibus reprehenderit nobis ducimus ad adipisci recusandae,
+            facere,
+            explicabo iusto pariatur tempore!
+            Dolorem eum laboriosam est? Vero vitae nulla est repellat.
+        </p>
+        <p>
+            we had to place an audio file here.
+            <audio src="audio/winning-elevation-111355.mp3" controls></audio>
+            <a href="https://pixabay.com/music/main-title-winning-elevation-111355/">Bron</a>
+        </p>
+        <p>
+HTML is usually viewed with a web browser,
+            a program that requests HTML documents from a web server and displays them as formatted text (a web page) to the user.
+            The document can also be 'local': as a file on the user's own computer,
+            instead of on a web server.
+            In addition to browsers, some other programs such as word processing programs can also display HTML documents.
+            E-mails can also contain HTML codes.
+        </p>
+        <figure>
+            <img src="afbeeldingen/download.jpeg" alt="een paar lijnen HTML code">
+            <figcaption>
+These are the 10 basic rules that every HTML file starts with.
+                <a href="https://kinsta.com/nl/blog/html-leren/">Bron</a>
+            </figcaption>
+        </figure>
+        <p>
+            The essential property of HTML is that it supports hypertext: documents and files linked by directly traceable references,
+            the so-called hyperlinks (also called links in Dutch).
+        </p>
+        <video src="video/1817572108.mp4" controls></video>
+        <p>
+            Christian and Samuel wrote this article for an assignment from BO where we have the
+            I got the information from <a href="https://nxtmuseum.com/nl/?gad_source=1&gclid=EAIaIQobChMIwqOzy7TSggMVeIZoCR0zzgkVEAAYASAAEgIdfPD_BwE">nxt museum</a>
+            have to imitate
+        </p>
+    </article>
+    <footer>
+        <div class="footer-basic">
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            
+            <p class="copyright">Samuel en Christian © 2024</p>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
