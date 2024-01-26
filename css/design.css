@@ -157,3 +157,15 @@ header{
         }
     }
 }
+
+.list-inline {
+    color: white;
+    padding: 1rem 2rem;
+    font-family: "Segoe UI";
+    font-weight: 100;
+
+    & a {
+        text-decoration: inherit;
+        color: inherit;
+    }
+}
