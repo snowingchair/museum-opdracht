@@ -128,3 +128,32 @@ header{
     margin-right: 5px;
     padding-bottom: 5px;
 }
+
+#language-selector {
+    
+    gap: 1px;
+    display: inline-flex;
+    font-family: "Segoe UI";
+    font-weight: 100;
+    padding: 10px;
+    
+    & > a {
+        text-decoration: none;
+        padding: 0.5rem;
+        background-color: black;
+        color: white;
+        transition: opacity 0.3s;
+
+        &.selected {
+            font-weight: bold;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:first-of-type {
+            border-right: 1px solid white;
+        }
+    }
+}
