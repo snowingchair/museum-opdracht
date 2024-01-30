@@ -68,7 +68,7 @@ footer{
     background: #222222;
 }
 
-#intro_text{
+.intro_text{
     font-size: 20px;
     margin-top: 15px;
 }
@@ -95,31 +95,31 @@ header{
     }
 }
 
-#Adres{
+.Adres{
     border-top: 5px white;
     margin-left: 150px;
     color: white;
 }
 
-#SocialMedia{
+.SocialMedia{
     margin-left: 350px;
     color: white;
 }
 
-#InstaLogo{
+.InstaLogo{
     width: 5%;
     margin-right: 5px;
     padding-right: 5px;
 }
 
-#YoutubeLogo{
+.YoutubeLogo{
     width: 4.5%;
     margin-top:15px;
     margin-right: 5px;
     padding-bottom: 5px;
 }
 
-#language-selector{
+.language-selector{
     gap: 1px;
     display: inline-flex;
     font-family: "Segoe UI";
