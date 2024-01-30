@@ -96,14 +96,19 @@ header{
 }
 
 .Adres{
+    text-align: center;
     border-top: 5px white;
-    margin-left: 150px;
+    margin-left: 27vw;
     color: white;
 }
 
 .SocialMedia{
-    margin-left: 1000px;
+    margin-left: 34vw;
     color: white;
+}
+
+.SocialMedia a{
+    display: flex;
 }
 
 .language-selector{
@@ -137,6 +142,7 @@ header{
 }
 
 .list-inline{
+    margin-left: 3vw;
     color: white;
     padding: 1rem 2rem;
     font-family: "Segoe UI";
