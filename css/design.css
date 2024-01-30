@@ -102,21 +102,8 @@ header{
 }
 
 .SocialMedia{
-    margin-left: 350px;
+    margin-left: 1000px;
     color: white;
-}
-
-.InstaLogo{
-    width: 5%;
-    margin-right: 5px;
-    padding-right: 5px;
-}
-
-.YoutubeLogo{
-    width: 4.5%;
-    margin-top:15px;
-    margin-right: 5px;
-    padding-bottom: 5px;
 }
 
 .language-selector{
@@ -159,4 +146,8 @@ header{
         text-decoration: inherit;
         color: inherit;
     }
+}
+
+.links{
+    color: white;
 }
