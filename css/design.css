@@ -157,3 +157,35 @@ header{
 .links{
     color: white;
 }
+
+.collections{
+    width: 100%;
+    padding: 40px;
+}
+
+.collectionTitle, .infoTitle{
+    font-size: 350%;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.collectionList{
+    list-style: none;
+    display: flex;
+    gap: 40px ;
+    flex-wrap: wrap;
+}
+
+.collectionListItem{
+    width: 500px;
+    height: 700px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.collectionListItem > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
