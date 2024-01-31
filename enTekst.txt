@@ -10,3 +10,11 @@
                 creation,
                 song, 
                 dance and more.}
+
+
+# Intro_text{
+                        Nxt Museum is the first museum in the Netherlands to focus entirely on media art.
+                    We exhibit artworks that use modern technologies of the present and future.
+                    Because art reflects the spirit of the times,
+                    we believe that the most innovative art gives us the opportunity to reflect on the impact of technological developments.
+                    A moment of reflection in a reality that continues to evolve faster and faster.}
