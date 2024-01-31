@@ -62,7 +62,7 @@ figcaption{
 }
 
 footer{
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     background: #222222;
@@ -98,12 +98,19 @@ header{
 .Adres{
     text-align: center;
     border-top: 5px white;
-    margin-left: 27vw;
+    margin-left: 200px;
     color: white;
+    line-height: 1.3;
+}
+
+.openingsTijden{
+    color: white;
+    margin-right: 350px;
+    margin-left: 250px;
+    
 }
 
 .SocialMedia{
-    margin-left: 34vw;
     color: white;
 }
 
