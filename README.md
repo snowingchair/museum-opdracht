@@ -21,4 +21,6 @@ Minimaal 5 plaatjes van het museum in de site
 De site is beschikbaar in Nederlands en Engels.
 Minstens 2 onderdelen zijn interactief. (bijv: een knopje voor dark mode en light mode)
 
+het heeft wat tijd gekost en soms wat moeite maar uiteingelijk is het gelukt. Met de link hier onder kunt u naar onze site gaan
+
 onze website    https://36780.hosts2.ma-cloud.nl/nxt-museum/index.html
